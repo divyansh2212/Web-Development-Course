@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <h2>This is HTML form</h2>
+    <form action="backend.php">
+
+        <div>
+            <label for="name"><strong>Name: </strong></label>
+            <input type="text" name="myName" id="name">
+        </div>
+        <br>
+
+        <div>
+            <label for="role"><strong>Role: </strong></label>
+            <input type="text" name="myRole" id="role">
+        </div>
+        <br>
+
+        <div>
+            <label for="email"><strong>E-Mail: </strong></label>
+            <input type="email" name="myEmail" id="email">
+        </div>
+        <br>
+
+        <div>
+            <label for="date"><strong>Date: </strong></label>
+            <input type="date" name="myDate" id="date">
+        </div>
+        <br>
+
+        <div>
+            <label for="Bonus"><strong>Bonus: </strong></label>
+            <input type="number" name="mybonus" id="Bonus">
+        </div>
+        <br>
+
+        <div>
+            <label for="eligible"><strong>Are you eligible? </strong></label>
+            <input type="checkbox" name="eligibility" id="eligible">
+        </div>
+        <br>
+
+        <div>
+            <strong>Gender: </strong>
+            <label for="male">Male</label>
+            <input type="radio" name="myGender" id="male">
+            <label for="female">Female</label>
+            <input type="radio" name="myGender" id="female">
+            <label for="other">Other</label>
+            <input type="radio" name="myGender" id="other">
+        </div>
+        <br>
+
+        <div>
+            <label for="area"><strong>Write about Yourself:</strong><br></label>
+            <textarea name="myText" id="area" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+
+        <div>
+            <label for="car"><strong>Car: </strong></label>
+            <select name="myCar" id="car">
+                <option value="ind">Indica</option>
+                <option value="san">Santro</option>
+                <option value="swf">Swift</option>
+            </select>
+        </div>
+        <br>
+
+        <div>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset Form">
+        </div>
+
+    </form>
+</body>
+
+</html>
