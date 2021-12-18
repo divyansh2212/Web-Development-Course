@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        /* Box sizing is used for not changing box size using margins */
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: #becfc5;
+    }
+
+    #h1,
+    #h2,
+    #h3 {
+        padding-bottom: 10px;
+    }
+
+    .container {
+        background-color: cyan;
+        border: 3px solid brown;
+        border-radius: 15px;
+        padding: 30px 19px 30px 19px;
+        /*top right bottom left*/
+        /* padding: 34px 19px; */
+        /* y-axis x-axis */
+
+        margin: 25px 20px 25px 20px;
+        width: 300px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h3 id="h1">This is Heading</h3>
+        <p id="firstPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam nihil maiores mollitia fugiat
+            architecto ipsum velit perspiciatis voluptatum neque maxime. Minima a modi perspiciatis aliquam.</p>
+    </div>
+    <div class="container">
+        <h3 id="h2">This is Heading</h3>
+        <p id="secondPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam nihil maiores mollitia fugiat
+            architecto ipsum velit perspiciatis voluptatum neque maxime. Minima a modi perspiciatis aliquam.</p>
+    </div>
+    <div class="container">
+        <h3 id="h3">This is Heading</h3>
+        <p id="thirdPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam nihil maiores mollitia fugiat
+            architecto ipsum velit perspiciatis voluptatum neque maxime. Minima a modi perspiciatis aliquam.</p>
+    </div>
+</body>
+
+</html>

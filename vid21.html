@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float & Clear</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    body {
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .container {
+        background-color: rgb(201, 184, 162);
+        border: 5px solid brown;
+        border-radius: 12px;
+        width: 900px;
+        margin: auto;
+        margin-top: 25px;
+    }
+
+    .item {
+        background-color: rgb(132, 226, 238);
+        border: 3px solid rebeccapurple;
+        margin: 15px 5px;
+        border-radius: 10px;
+    }
+
+    #fruits {
+        float: left;
+        width: 48%;
+    }
+
+    #electronics {
+        float: right;
+        width: 48%;
+    }
+
+    #stationary {
+        clear: both;
+    }
+
+    p,
+    h3 {
+        text-align: justify;
+    }
+
+    h1 {
+        margin: 23px auto;
+        width: 455px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h1>Welcome to my Store!</h1>
+        <div class="item" id="fruits">
+            <h3>Fruits</h3>
+            <p class="para" id="fruitspara">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, incidunt quas inventore architecto minus,
+                quis ad reiciendis distinctio quo ullam, praesentium non atque ipsum. Culpa vero nam dolores provident
+                expedita! Quas unde reprehenderit deserunt consequatur nesciunt quia, deleniti a quo.
+            </p>
+        </div>
+
+        <div class="item" id="electronics">
+            <h3>Electronics</h3>
+            <p class="para" id="electronicspara">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit voluptatem doloribus adipisci
+                minima, libero quia corporis molestiae animi ut. Consequatur porro quidem officiis accusantium et sint
+                dignissimos, enim eos commodi debitis a provident facilis ex iure, libero vel cupiditate quibusdam?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quo quod atque id, placeat facere
+                doloribus. Inventore non cum laboriosam ea molestiae est? Earum, excepturi? Quod pariatur impedit
+                asperiores nostrum recusandae unde sequi animi earum quo, laborum distinctio, culpa possimus.
+            </p>
+        </div>
+
+        <div class="item" id="stationary">
+            <h3>Stationary</h3>
+            <p class="para" id="stationarypara">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dignissimos magnam possimus quas.
+                Ratione maiores officia, vel animi eligendi nam cum exercitationem omnis non iusto, at beatae error
+                cupiditate, similique quas quam eum corporis ut!
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
