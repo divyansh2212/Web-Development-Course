@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling Links & Buttons</title>
+</head>
+<style>
+    .container {
+        border: 3px solid brown;
+        width: 666px;
+        background-color: #fffade;
+        padding: 22px;
+        margin: 22px auto;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    /* a:hover{
+        background-color: darkseagreen;
+    } */
+    .btn:hover {
+        background-color: darkseagreen;
+    }
+
+    a:visited {
+        color: blue;
+    }
+
+    a:active {
+        background-color: rgb(219, 11, 11);
+    }
+
+    .btn {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 5px;
+        background-color: rgb(103, 184, 96);
+        border: none;
+        color: black;
+        cursor: pointer;
+        font-size: 14px;
+    }
+</style>
+
+<body>
+    <div class="container" id="cont1">
+        <h2>This is Heading</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus obcaecati perspiciatis suscipit quod. Qui
+            quidem adipisci molestias, id animi minus sequi alias nihil, veniam velit placeat suscipit totam earum.
+            Asperiores modi voluptates, ut accusantium cum earum placeat consequatur delectus optio.</p>
+        <a href="http://google.com" target="_blank" class="btn">Google</a>
+        <button class="btn">Submit</button>
+    </div>
+</body>
+
+</html>
