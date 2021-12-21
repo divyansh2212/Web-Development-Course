@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Bar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Ubuntu:ital,wght@1,300&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url('img/gym2.jpg');
+            color: white;
+            font-family: 'Baloo Bhaijaan 2', cursive;
+        }
+
+        .left {
+            /* border: 3px solid red; */
+            display: inline-block;
+            position: absolute;
+            top: 20px;
+            left: 30px;
+        }
+
+        .mid {
+            /* border: 3px solid yellow; */
+            display: block;
+            margin: 20px auto;
+            width: 50%;
+        }
+
+        .right {
+            /* border: 3px solid pink; */
+            display: inline-block;
+            position: absolute;
+            top: 20px;
+            right: 18px;
+        }
+
+        .left img {
+            width: 80px;
+            filter: invert(100%);
+        }
+
+        .left div {
+            text-align: center;
+            line-height: 12px;
+            font-size: 19px;
+        }
+
+        .btn {
+            font-family: 'Baloo Bhaijaan 2', cursive;
+            margin: auto 8px;
+            color: white;
+            background-color: black;
+            font-size: 14px;
+            border: 2px solid gray;
+            padding: 4px 14px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: grey;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 20px;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: white;
+            padding: 30px 15px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            color: gray;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+
+        <div class="left">
+            <img src="img/dumbell.png" alt="">
+            <div>Fitness Bar</div>
+        </div>
+
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Fitness Goals</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Join Us</a></li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <button class="btn">Email Us</button>
+            <button class="btn">Contact</button>
+        </div>
+
+    </header>
+</body>
+
+</html>
