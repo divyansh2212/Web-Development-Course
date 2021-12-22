@@ -16,12 +16,11 @@
             color: white;
             font-family: 'Baloo Bhaijaan 2', cursive;
         }
-
         .left {
             /* border: 3px solid red; */
             display: inline-block;
             position: absolute;
-            top: 20px;
+            top: 10px;
             left: 30px;
         }
 
@@ -83,6 +82,42 @@
             color: gray;
             text-decoration: underline;
         }
+
+        .container {
+            /* border: 2px solid green; */
+            font-family: 'Baloo Bhaijaan 2', cursive;
+            margin: 61px 0px;
+            width: 50%;
+            padding: 35px 35px;
+            border-radius: 5px;
+        }
+
+        .container h1 {
+            text-align: center;
+        }
+
+        .form-group input {
+            font-family: 'Baloo Bhaijaan 2', cursive;
+            display: block;
+            width: 300px;
+            margin: 8px auto;
+            text-align: center;
+            border: 3px solid black;
+            font-size: large;
+            border-radius: 20px;
+            padding: 2px;
+        }
+
+        .container button {
+            display: block;
+            width: 59%;
+            margin: auto;
+
+        }
+        header{
+            position: sticky;
+            top: 0;
+        }
     </style>
 </head>
 
@@ -109,6 +144,31 @@
         </div>
 
     </header>
+
+    <div class="container">
+        <h1>Join the best gym of Delhi now!</h1>
+        <form action="backend.php">
+
+            <div class="form-group">
+                <input type="text" placeholder="Enter your name">
+            </div>
+
+            <div class="form-group">
+                <input type="tel" placeholder="Enter your phone number">
+            </div>
+
+            <div class="form-group">
+                <input type="text" placeholder="Enter your query">
+            </div>
+
+            <div class="form-group">
+                <input type="text" placeholder="Any Suggestions?">
+            </div>
+
+        </form>
+        <button class="btn">Submit</button>
+    </div>
+
 </body>
 
 </html>
