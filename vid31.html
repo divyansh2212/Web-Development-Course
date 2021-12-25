@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+</head>
+<style>
+    h1{
+        text-align: center;
+        background-color: black;
+        color: white;
+    }
+
+    /* This CSS will be applied on all p of div */
+    div p{
+        background-color: cyan;
+        color: black;
+    }
+
+    /* This CSS will be applied if the first parent of p is div */
+    div > p{
+        background-color: brown;
+        color: white;
+    }
+
+    /* This CSS will be applied if the upper sibling of p is ul */
+    ul + p{
+        background-color: yellow;
+        color: black;
+    }
+
+</style>
+<body>
+    <h1>Tutorial on CSS Selectors</h1>
+    <div class="container">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque, possimus?</p>
+        <ul>
+            <li>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </li>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+        </ul>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+</body>
+</html>
