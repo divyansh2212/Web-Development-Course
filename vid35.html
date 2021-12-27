@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables and Custom Properties</title>
+</head>
+<style>
+    /* Syntax of assigning a global variable */
+    :root {
+        --border-color: purple;
+        --length: 200px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        border: 2px solid red;
+        width: var(--length);
+
+        /* Margin is set to auto bcoz width of container is less than the items */
+        margin: auto;
+        /* height: 400px; */
+        align-items: center;
+    }
+
+    .box {
+        /* Syntax of assigning a local variable */
+        --primary-color: cyan;
+        background-color: var(--primary-color);
+        height: var(--length);
+        width: var(--length);
+        border: 3px solid var(--border-color);
+        margin: 3px 14px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box" id="box-1"></div>
+        <div class="box" id="box-2"></div>
+        <div class="box" id="box-3"></div>
+    </div>
+</body>
+
+</html>

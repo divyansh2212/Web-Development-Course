@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and Text Shadow</title>
+</head>
+<style>
+    .container {
+        display: flex;
+    }
+
+    .cards {
+        background-color: skyblue;
+        margin: 12px 13px;
+        padding: 12px 10px;
+
+        /* box-shadow: x y color; */
+        box-shadow: 8px 16px darkmagenta;
+
+        /* box-shadow: x y shine-radius color; */
+        box-shadow: 8px 15px 30px darkblue;
+
+        /* box-shadow: x y shine-radius spread-radius color; */
+        box-shadow: -9px -16px 30px 15px darkcyan;
+        /* We can give negative value also for box shadow */
+
+        /* For inner effects use 'inset' */
+        box-shadow: inset -9px -16px 30px 15px darkcyan;
+    }
+
+    .cards h2 {
+        text-shadow: 1px 4px red;
+        /* All other same rules are applicable for text-shadow as applied in box-shadow: ; */
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="cards" id="card-1">
+            <h2>Card -1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nisi aut alias odit odio assumenda
+                eius vero labore. Voluptatibus, iusto.</p>
+        </div>
+        <div class="cards" id="card-2">
+            <h2>Card -2</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse repudiandae laudantium ipsum ea? Voluptas
+            neque nisi minima minus, autem debitis eaque fugiat tenetur delectus pariatur!
+        </div>
+        <div class="cards" id="card-3">
+            <h2>Card 3</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A labore earum nostrum harum amet placeat totam
+                exercitationem, modi cupiditate delectus iure architecto magni ut excepturi debitis officia ab non
+                libero temporibus mollitia? Perferendis quaerat ex et praesentium rerum beatae aut obcaecati architecto
+                quibusdam voluptatem omnis velit in harum ea, totam corrupti.</p>
+        </div>
+    </div>
+</body>
+
+</html>
