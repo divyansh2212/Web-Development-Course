@@ -60,24 +60,18 @@
   padding: 5px 100px;
   justify-content: center;
   align-items: center;
-  
+  height: 208px;
 }
 #home::before {
   content: "";
   position: absolute;
-  height: 65%;
+  height: 67%;
   width: 100%;
   background: url("../bg2.jpg") no-repeat center center/cover;
   z-index: -1;
   top: 0;
   left: 0;
   /* opacity: 5; */
-}
-
-.h-primary {
-  font-family: "Baloo Bhaijaan 2", cursive;
-  font-size: 2rem;
-  padding: 12px;
 }
 
 #home h1 {
@@ -100,4 +94,41 @@
   border-radius: 10px;
   font-size: 1.2rem;
   cursor: pointer;
+}
+
+/* Services section */
+.services {
+  margin: 10px;
+  display: flex;
+}
+.services .box {
+  border: 2px solid red;
+  padding: 14px;
+  margin: 0px 4px;
+  border-radius: 23px;
+  background-color: beige;
+}
+.services .box img {
+  height: 100px;
+  margin: auto;
+  display: block;
+}
+.services .box p {
+  font-family: "Bree Serif", serif;
+}
+
+/* Utility classes */
+.h-primary {
+  font-family: "Baloo Bhaijaan 2", cursive;
+  font-size: 2rem;
+  padding: 12px;
+}
+.h-secondary {
+  font-size: 1.5rem;
+  font-family: "Baloo Bhaijaan 2", cursive;
+  padding: 10px;
+  font-weight: bold;
+}
+.center {
+  text-align: center;
 }
