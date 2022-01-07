@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid : Template Area</title>
+  </head>
+  <style>
+    .container {
+      display: grid;
+      grid-template-areas:
+        "navbar navbar navbar"
+        "section section aside";
+      grid-gap: 1rem;
+    }
+    .item {
+      border: 2px solid black;
+      background-color: blanchedalmond;
+      padding: 10px;
+    }
+    #section {
+      grid-area: section;
+    }
+    #navbar {
+      display: flex;
+      justify-content: center;
+      grid-area: navbar;
+    }
+    #aside {
+      grid-area: aside;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div id="navbar" class="item">Home About Details Contact Us</div>
+      <div id="section" class="item">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime iure
+        quaerat magni esse optio. Tenetur odio esse deleniti laudantium at, fuga
+        dolorem reprehenderit, nobis aut dicta sunt, qui impedit a. Autem
+        similique maiores, voluptate cum, incidunt repudiandae odio explicabo
+        molestias tenetur sit dolorum accusantium nam! Numquam perspiciatis est
+        sunt dicta! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Nesciunt adipisci maiores architecto vel debitis et accusantium iusto
+        non maxime repudiandae. Ea dolor similique rem quis officia voluptates
+        sed. Saepe cupiditate quia incidunt recusandae soluta totam mollitia
+        accusantium atque maxime repudiandae amet laudantium, quis nihil quam
+        natus officiis ad rerum necessitatibus! Ab quasi eaque, veritatis minima
+        labore sed blanditiis iste consequuntur quaerat quam ea hic atque ex
+        optio aliquid nobis placeat quisquam alias. Totam aliquid praesentium
+        impedit vel eligendi nulla necessitatibus corrupti accusantium nostrum.
+        Sequi ut maxime beatae molestiae animi doloribus quas sint velit.
+        Reprehenderit praesentium molestias officiis expedita nostrum, est fugit
+        eligendi enim laudantium asperiores corrupti minima, commodi cum rerum
+        recusandae quis distinctio accusamus aspernatur et! Iusto, qui optio
+        incidunt voluptatibus doloremque dolor facere debitis temporibus
+        commodi, reiciendis numquam recusandae at neque, sint fugiat consectetur
+        eligendi tempora adipisci nihil quam corrupti excepturi exercitationem.
+        Saepe sit voluptatibus deserunt molestias corporis aliquam! Mollitia,
+        voluptatibus obcaecati voluptatem blanditiis id est numquam neque nemo
+        dignissimos quo dicta aliquam optio quod! Numquam soluta quo delectus
+        quam culpa inventore unde aperiam, maiores eum consectetur consequuntur
+        a recusandae nesciunt reprehenderit quia doloribus quasi neque porro
+        distinctio quae et totam? Maiores aliquid corrupti nulla adipisci ullam,
+        placeat ut facilis nesciunt eius harum id iste quam dolore sequi autem
+        ad nemo ex tempore, nam accusantium repellendus nihil omnis. Amet qui,
+        aliquid autem molestiae facere quasi dignissimos error modi
+        exercitationem vel corrupti, esse quod recusandae, consequuntur quia
+        enim doloribus! Aliquid, magni maxime? Eaque eum aperiam minus quae
+        impedit atque eveniet consequuntur error, temporibus nam sunt architecto
+        amet delectus natus perspiciatis fugit ipsum reiciendis unde! Distinctio
+        est, ab doloremque ducimus vitae fugiat delectus nobis sapiente
+        aspernatur vel quibusdam iste explicabo, nemo dolorum id reprehenderit
+        optio nostrum repudiandae magnam laboriosam obcaecati quo repellat
+        possimus mollitia. Incidunt officia vero at veritatis fugit perferendis.
+      </div>
+      <div id="aside" class="item">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, doloribus
+        error voluptatibus ducimus eaque vel veniam est totam labore incidunt.
+      </div>
+    </div>
+  </body>
+</html>
