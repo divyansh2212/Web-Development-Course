@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid + Media Queries</title>
+  </head>
+  <style>
+    .container {
+      display: grid;
+      grid-gap: 1rem;
+      grid-template-areas:
+        "navbar navbar navbar navbar"
+        "section section section aside"
+        "footer footer footer footer";
+    }
+    @media (min-width: 700px) and (max-width: 1000px) {
+      body {
+        background-color: green;
+      }
+    }
+    @media (min-width: 500px) and (max-width: 700px) {
+      body {
+        background-color: blueviolet;
+      }
+      .container {
+        grid-template-areas:
+          "navbar navbar navbar navbar"
+          "section section section section"
+          "aside aside aside aside"
+          "footer footer footer footer";
+      }
+    }
+    @media (min-width: 300px) and (max-width: 500px) {
+      body {
+        background-color: blueviolet;
+      }
+      .container {
+        grid-template-areas:
+          "navbar navbar navbar navbar"
+          "section section section section"
+          "aside aside aside aside"
+          "footer footer footer footer";
+      }
+      aside {
+        display: none;
+      }
+    }
+    .bdr {
+      background-color: beige;
+      border: 2px solid green;
+      padding: 10px 22px;
+    }
+    nav {
+      grid-area: navbar;
+    }
+    section {
+      grid-area: section;
+    }
+    aside {
+      grid-area: aside;
+    }
+    footer {
+      grid-area: footer;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <nav class="bdr">
+        <span>Home</span>
+        <span>About</span>
+        <span>Details</span>
+        <span>Contact Us</span>
+      </nav>
+      <section class="bdr">
+        <h1>Welcome to our Site!</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam aut
+          corporis consequuntur, rem eveniet, mollitia, autem reiciendis eum
+          optio eaque soluta quod suscipit maiores ducimus vero cumque
+          assumenda? Cum dolorum esse, minima corrupti assumenda earum
+          perferendis amet qui fugit quod, nisi commodi ea consequuntur
+          explicabo similique quam repudiandae hic atque ut eos? Quas impedit
+          iure, doloribus assumenda consectetur provident animi vitae ipsam
+          corrupti delectus libero? Blanditiis libero temporibus, tempora ex
+          veniam commodi, quo deserunt quidem expedita consequatur quasi
+          quisquam neque excepturi eligendi id omnis quos asperiores esse vitae
+          illum necessitatibus delectus quae sed placeat. Accusamus dolores modi
+          saepe tenetur nostrum iure, dolorum enim porro aperiam possimus
+          voluptatum ratione at rem inventore ducimus, ex tempore animi. Ipsa
+          molestias dolorum labore voluptates nihil explicabo facere eum vel
+          voluptatum commodi accusamus voluptatem adipisci, quam maiores alias
+          id possimus minima sed! Consequatur repellendus omnis aperiam
+          veritatis, vitae quos ipsum, exercitationem id sunt illo voluptatum
+          laudantium dignissimos repudiandae consectetur tempora qui maxime amet
+          asperiores? Error at adipisci animi magni quam obcaecati aspernatur,
+          harum officia, dolorum recusandae a unde sequi, voluptatem rem
+          corporis! Eos, facilis totam obcaecati cupiditate magnam saepe cumque
+          suscipit delectus officiis error. Quidem consequuntur nulla dolores,
+          animi blanditiis temporibus eum, maiores aut minus fugiat quasi
+          voluptate repellendus maxime error vel ratione itaque explicabo sint
+          culpa at voluptatibus molestiae ea quos! Explicabo deleniti culpa
+          eligendi perferendis repellendus distinctio id debitis, voluptate
+          voluptatibus tenetur architecto, in vel quae minima ullam sunt
+          adipisci suscipit autem. Laborum possimus deleniti soluta sequi iure,
+          perferendis ipsa ea quae hic, explicabo totam alias, sint reiciendis
+          nemo culpa! Necessitatibus.
+        </p>
+      </section>
+      <aside class="bdr">
+        <h2>Learn CSS here</h2>
+      </aside>
+    </div>
+    <footer class="bdr">Copyright 2022! All rights reserved!</footer>
+  </body>
+</html>
