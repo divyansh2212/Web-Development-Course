@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alert, Prompt and Confirm in JS</title>
+  </head>
+  <body>
+    <div class="container">This is a page</div>
+  </body>
+  <script>
+    // Alert doesn't return anything
+    alert("Your card limit is expiring soon!");
+
+    // Prompt - return a string
+    let name = prompt("Enter your name here", "Guest");
+    console.log(name);
+
+    // Confirm - returns true or false
+    let answer = confirm("Do you want to exit this page?");
+    console.log(answer);
+
+    // Challenge Accepted
+    // let age = prompt("Enter your age", "18");
+    // if (age >= 18) {
+    //   console.log("Welcome to our club!");
+    // } else {
+    //   console.log("Sorry! You are not allowed in our club!");
+    // }
+  </script>
+</html>
