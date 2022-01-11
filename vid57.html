@@ -1,0 +1,80 @@
+<!-- Browser events:
+    click
+    contextmenu
+    mouseover/mouseout
+    mousedown/mouseup
+    mousemove
+
+    submit 
+    focus
+
+    DOMContentLoaded
+
+    transitionend -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events & Listening to Events</title>
+  </head>
+  <style>
+    #btn {
+      padding: 6px 10px;
+      background-color: bisque;
+      color: black;
+      font-weight: bold;
+      border: 2px solid brown;
+      border-radius: 5px;
+      /* visibility: ; */
+      cursor: pointer;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1>This is my heading</h1>
+      <p id="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nesciunt
+        eaque nisi soluta iure minima id quasi modi quae pariatur vel blanditiis
+        veritatis non culpa, beatae vitae molestias! Commodi at sunt molestiae
+        in velit accusamus reiciendis nostrum nam. Dolores esse sint doloremque
+        nemo similique, minus perspiciatis eos eligendi aliquam laboriosam!
+        Voluptate, quia? Ullam harum ea repellendus velit ipsa minima,
+        reprehenderit eaque quos commodi! Id similique dolores consectetur
+        tenetur molestias laboriosam sunt laudantium? Blanditiis dolore ipsam
+        molestiae inventore iste, autem alias repellat? Ad dicta soluta
+        doloribus dignissimos. Totam aliquam minus laborum, consequatur pariatur
+        dolore porro consequuntur voluptatum provident repellat similique in
+        eaque culpa? Ab quasi accusantium et reprehenderit facere, culpa
+        repellat autem! Repellendus accusamus voluptatem mollitia, culpa saepe
+        consequuntur numquam repudiandae assumenda voluptatibus officiis aliquid
+        ipsum libero ea expedita reprehenderit, ab recusandae hic magni aperiam
+        optio. Quo tenetur natus vitae delectus numquam? Debitis rerum
+        accusantium modi placeat quasi maiores at ipsa.
+      </p>
+      <button id="btn" onclick="toggle()">Show/Hide</button>
+    </div>
+  </body>
+  <script>
+    function toggle() {
+      // We can alse use display : none here
+      let para = document.getElementById("para");
+      let btn = document.getElementById("btn");
+      if (para.style.visibility != "hidden") {
+        para.style.visibility = "hidden";
+      } else {
+        para.style.visibility = "visible";
+      }
+    }
+
+    let para = document.getElementById("para");
+    para.addEventListener("mouseover", function run() {
+      console.log("Mouse Inside");
+    });
+    para.addEventListener("mouseout", function run() {
+      console.log("Mouse Outside");
+    });
+  </script>
+</html>
