@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>setInterval & setTimeOut</title>
+  </head>
+  <body>
+    <div class="container">Time now is <span id="time"></span></div>
+  </body>
+  <script>
+    function greet(name) {
+      console.log("Hello! Good Morning " + name);
+    }
+    // We can't pass greet() to this
+    // setTimeout(greet, 5000, "Divyansh");
+
+    timeout = setTimeout(greet, 2000, "Divyansh");
+    console.log(timeout);
+    clearTimeout(timeout);
+
+    timeout = setInterval(greet, 50, "Harry");
+    clearInterval(timeout);
+
+    function displayTime() {
+      time = new Date();
+      console.log(time);
+      document.getElementById("time").innerHTML = time;
+    }
+    // displayTime();
+    setInterval(displayTime, 1000);
+  </script>
+</html>
