@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Working with JSON in JavaScript</title>
+  </head>
+  <body></body>
+  <script>
+    let obj1 = {
+      name: "Harry",
+      channel: "CWH",
+      student: "Divyansh",
+    };
+    let obj1str = JSON.stringify(obj1);
+    console.log(obj1str);
+    obj1str = obj1str.replace("Harry", "Luv");
+    let obj2 = JSON.parse(obj1str);
+    console.log(obj2);
+  </script>
+</html>
