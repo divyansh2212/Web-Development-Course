@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('bg.jpeg');
+    background-size: cover;
+    overflow: hidden;
+}
+
+.taskbar {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    justify-content: center;
+    background-color: #f3f3f3;
+    height: 35px;
+    z-index: 100;
+}
+
+.right {
+    position: absolute;
+    right: 0;
+    margin: 4px;
+    height: 80%;
+}
+
+.startMenu {
+    position: absolute;
+    bottom: -420px;
+    width: 100%;
+    text-align: center;
+    transition: all 0.3s ease-in;
+}
+
+.startMenu img {
+    width: 400px;
+    height: 420px;
+    border-radius: 8px;
+}
